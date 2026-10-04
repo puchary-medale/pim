@@ -32,3 +32,12 @@ Plik katalogu znajduje się lokalnie w `assets/katalog-tryumf-2026.pdf`. Podglą
 ## Kontakt
 
 Strona nie wysyła danych do zewnętrznego formularza. CTA korzystają z `tel:` i `sms:` oraz linku do Map Google.
+
+
+## Dane firmy
+- Puchary i Medale Sp. z o.o.
+- NIP: 6332240252
+- REGON: 383437540
+- KRS: 0000787581
+- Adres: ul. Gagarina 100, 44-268 Jastrzębie-Zdrój
+- E-mail: biuro.stsmedia@gmail.com

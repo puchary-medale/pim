@@ -8,6 +8,16 @@
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
+  const progress = document.querySelector('.scroll-progress span');
+  const updateProgress = () => {
+    if (!progress) return;
+    const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    progress.style.transform = `scaleX(${Math.min(1, window.scrollY / max)})`;
+  };
+  updateProgress();
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress, { passive: true });
+
   menuBtn?.addEventListener('click', () => {
     const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
     menuBtn.setAttribute('aria-expanded', String(!isOpen));
@@ -36,18 +46,6 @@
     reveal.forEach(el => io.observe(el));
   }
 
-  const lightbox = document.querySelector('#lightbox');
-  const lightboxImg = lightbox?.querySelector('img');
-  document.querySelectorAll('[data-gallery]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      if (!lightbox || !lightboxImg) return;
-      lightboxImg.src = btn.dataset.gallery;
-      lightboxImg.alt = btn.querySelector('img')?.alt || 'Powiększony podgląd';
-      lightbox.showModal();
-    });
-  });
-  lightbox?.querySelector('.lightbox-close')?.addEventListener('click', () => lightbox.close());
-  lightbox?.addEventListener('click', e => { if (e.target === lightbox) lightbox.close(); });
 
   const catalog = document.querySelector('#catalogDialog');
   const catalogFrame = catalog?.querySelector('[data-catalog-frame]');
