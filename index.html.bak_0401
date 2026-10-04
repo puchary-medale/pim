@@ -275,16 +275,9 @@
         <div class="custom-head reveal">
           <div>
             <p class="eyebrow"><span></span> REALIZACJE I PERSONALIZACJA</p>
-            <h2 id="customTitle">PUCHARY, MEDALE I STATUETKI.<br><em>DOPASOWANE<br><span class="nowrap">DO WYDARZENIA.</span></em></h2>
+            <h2 id="customTitle">PUCHARY, MEDALE I STATUETKI.<br><em>DOPASOWANE DO WYDARZENIA.</em></h2>
           </div>
-          <div class="custom-side">
-            <p>Od zawodów i turniejów po jubileusze, gale, szkoły i wydarzenia firmowe. Dobieramy odpowiedni model, materiał i sposób znakowania, a następnie personalizujemy nagrody logo, datą, dedykacją lub grafiką.</p>
-            <div class="custom-points" aria-label="Zakres realizacji">
-              <span>LOGO • DEDYKACJA • DATA</span>
-              <span>SZKŁO • DREWNO • METAL</span>
-              <span>SPORT • FIRMA • SZKOŁA</span>
-            </div>
-          </div>
+          <p>Od zawodów i turniejów po jubileusze, gale, szkoły i wydarzenia firmowe. Dobieramy odpowiedni model, materiał i sposób znakowania, a następnie personalizujemy nagrody logo, datą, dedykacją lub grafiką.</p>
         </div>
 
         <div class="custom-gallery">
