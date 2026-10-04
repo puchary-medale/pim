@@ -205,3 +205,20 @@ button{font:inherit}
 
 @media(max-width:900px){.studio-grid,.brief-grid{grid-template-columns:1fr;gap:48px}.brief-intro{position:static}.studio-showcase{min-height:540px}}
 @media(max-width:620px){.studio-section,.brief-section{padding:78px 0}.studio-copy h2,.brief-intro h2{font-size:clamp(40px,12vw,58px)}.studio-showcase{grid-template-columns:1fr;grid-template-rows:auto;min-height:0}.material-card,.material-card-main{grid-row:auto;min-height:230px;padding:25px}.material-card-main{min-height:320px}.brief-builder{padding:22px;border-radius:20px}.choice-row{display:grid;grid-template-columns:1fr 1fr}.choice-row span{text-align:center;padding:12px 8px}.brief-summary{align-items:flex-start;flex-direction:column}.brief-summary strong{text-align:left}}
+
+/* --- Pełna oferta inspirowana zakresem TRYUMF --- */
+.full-offer{margin-top:76px;padding:42px;border:1px solid rgba(255,255,255,.09);border-radius:30px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.015));box-shadow:0 30px 100px rgba(0,0,0,.18)}
+.full-offer-head{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:end;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.08)}
+.full-offer-head h3{margin:0;font-size:clamp(34px,4vw,58px);line-height:.95;letter-spacing:-.045em}
+.full-offer-head>p{margin:0;color:#959ca5;font-size:13px;line-height:1.75;max-width:650px}
+.offer-spectrum{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:20px;overflow:hidden}
+.offer-spectrum article{min-height:190px;padding:23px;background:#0c0f13;position:relative;transition:background .25s ease,transform .25s ease}
+.offer-spectrum article:hover{background:#12171d}
+.offer-spectrum article span{display:block;color:#6f7781;font-size:8px;font-weight:900;letter-spacing:.18em;margin-bottom:34px}
+.offer-spectrum article strong{display:block;font-size:16px;line-height:1.05;color:#f1f3f5;margin-bottom:10px}
+.offer-spectrum article p{margin:0;color:#7f8790;font-size:10px;line-height:1.55}
+.full-offer-cta{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-top:28px}
+.full-offer-cta p{margin:0;color:#8f969f;font-size:12px;line-height:1.6;max-width:700px}.full-offer-cta p strong{color:#d6d9dd}
+@media(max-width:1000px){.offer-spectrum{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:820px){.full-offer{margin-top:54px;padding:26px}.full-offer-head{grid-template-columns:1fr;gap:18px}.offer-spectrum{grid-template-columns:repeat(2,1fr)}.full-offer-cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.full-offer{padding:18px;border-radius:22px}.offer-spectrum{grid-template-columns:1fr}.offer-spectrum article{min-height:150px}.full-offer-cta .btn{width:100%;justify-content:center}}

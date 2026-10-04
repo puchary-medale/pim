@@ -14,3 +14,9 @@
 - godziny otwarcia pochodzą z instrukcji zamawiającego.
 
 Informacja „Oficjalny Platynowy Partner TRYUMF” została dodana zgodnie z bieżącą instrukcją zamawiającego.
+
+## Zakres oferty TRYUMF — aktualizacja 2026
+- https://tryumf.com/ — puchary, medale, statuetki, dyplomy, personalizacja
+- https://tryumf.com/nowosci-2026 — kategorie nowości 2026
+- https://tryumf.com/dyplomy%2Cs1003%2Ccp717%2Cit.html — dyplomy drewniane i szklane
+- https://medal.tryumf.com/ — medale na zamówienie: odlewane, Lasercut, Vision, Q-medals, ekologiczne, obrotowe, pinsy i monety
