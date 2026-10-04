@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900">
+<defs>
+  <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#7b541b"/><stop offset=".18" stop-color="#f3d58f"/><stop offset=".42" stop-color="#a9792b"/><stop offset=".66" stop-color="#fff0b3"/><stop offset="1" stop-color="#8a6222"/></linearGradient>
+  <linearGradient id="silver" x1="0" x2="1"><stop offset="0" stop-color="#626871"/><stop offset=".22" stop-color="#eef1f3"/><stop offset=".46" stop-color="#8d949e"/><stop offset=".7" stop-color="#ffffff"/><stop offset="1" stop-color="#5b626b"/></linearGradient>
+  <linearGradient id="bronze" x1="0" x2="1"><stop offset="0" stop-color="#5d321c"/><stop offset=".24" stop-color="#d18d54"/><stop offset=".55" stop-color="#8f4b26"/><stop offset=".78" stop-color="#edb17a"/><stop offset="1" stop-color="#593018"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#e5bb6b" stop-opacity=".35"/><stop offset="1" stop-color="#e5bb6b" stop-opacity="0"/></radialGradient>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="28" stdDeviation="22" flood-color="#000" flood-opacity=".6"/></filter>
+  <filter id="blur"><feGaussianBlur stdDeviation="20"/></filter>
+</defs><rect width="900" height="900" fill="#12171e"/><circle cx="455" cy="440" r="350" fill="url(#glow)" opacity=".5"/><g transform="translate(95 120)"><path d="M145 0h120l78 280H220z" fill="#922732"/><path d="M348 0h120l-78 280H270z" fill="#eceeef"/><circle cx="310" cy="470" r="205" fill="url(#gold)" filter="url(#shadow)"/><circle cx="310" cy="470" r="155" fill="#10141a" opacity=".18"/><path d="M310 360l30 71 76 6-58 49 18 74-66-40-66 40 18-74-58-49 76-6z" fill="#fff0b7" opacity=".88"/></g><circle cx="710" cy="650" r="120" fill="url(#silver)" opacity=".8"/><circle cx="135" cy="725" r="92" fill="url(#bronze)" opacity=".78"/></svg>
