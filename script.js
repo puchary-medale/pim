@@ -49,6 +49,21 @@
   lightbox?.querySelector('.lightbox-close')?.addEventListener('click', () => lightbox.close());
   lightbox?.addEventListener('click', e => { if (e.target === lightbox) lightbox.close(); });
 
+  const catalog = document.querySelector('#catalogDialog');
+  const catalogFrame = catalog?.querySelector('[data-catalog-frame]');
+  const openCatalog = () => {
+    if (!catalog) return;
+    if (catalogFrame && !catalogFrame.getAttribute('src')) catalogFrame.setAttribute('src', 'assets/katalog-tryumf-2026.pdf#view=FitH&toolbar=1&navpanes=0');
+    catalog.showModal();
+  };
+  document.querySelectorAll('[data-catalog-open]').forEach(btn => btn.addEventListener('click', openCatalog));
+  catalog?.querySelector('.catalog-dialog-close')?.addEventListener('click', () => catalog.close());
+  catalog?.addEventListener('click', e => {
+    const rect = catalog.getBoundingClientRect();
+    const inside = e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom;
+    if (!inside) catalog.close();
+  });
+
   const privacy = document.querySelector('#privacyDialog');
   document.querySelector('.privacy-open')?.addEventListener('click', () => privacy?.showModal());
   privacy?.querySelector('.privacy-close')?.addEventListener('click', () => privacy.close());

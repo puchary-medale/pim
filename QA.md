@@ -5,20 +5,19 @@ Data: 2026-10-04
 ## Wykonane sprawdzenia
 
 - 1 × H1 i logiczna hierarchia H2/H3.
-- brak poziomego overflow przy szerokościach: 390, 768, 1024 i 1440 px.
-- menu mobilne otwiera się prawidłowo przy 390, 768 i 1024 px.
-- brak błędów JavaScript w testach renderowania.
-- wszystkie grafiki produkcyjne są lokalne; strona nie pobiera fontów ani bibliotek zewnętrznych.
-- grafiki poniżej pierwszego ekranu używają lazy loading.
-- hero ma preload/fetchpriority i stałe wymiary grafiki ograniczające CLS.
-- `tel:` działa dla numeru 667 281 723; CTA wiadomości korzysta z `sms:`.
-- mapa nie jest osadzona jako ciężki iframe; lokalizacja otwiera Google Maps dopiero po kliknięciu.
-- przygotowane: favicon, Open Graph, JSON-LD LocalBusiness/Organization, canonical, sitemap.xml, robots.txt i konfiguracja Vercel.
+- wszystkie nowe grafiki i katalog PDF są lokalne w `assets/`.
+- fotografie zostały zoptymalizowane do WebP; duży katalog PDF jest ładowany dopiero na żądanie.
+- karty kategorii prowadzą do sekcji katalogu zamiast wyglądać jak nieaktywne przyciski.
+- katalog ma trzy ścieżki dostępu: podgląd na stronie, otwarcie PDF w nowej karcie i pobranie pliku.
+- podgląd katalogu ma przycisk zamknięcia i komunikat awaryjny dla przeglądarek, które nie renderują PDF w iframe.
+- menu główne i mobilne zawierają odnośnik „Katalog 2026”.
+- sekcja TRYUMF jest osobnym blokiem i zawiera dostarczone logo partnera.
+- sekcja „Każdy sukces ma swoją scenę” ma przyciemnione zdjęcie w tle oraz zachowany kontrast tekstu i tagów.
+- galeria korzysta z dostarczonych zdjęć i zachowuje działający lightbox.
+- `script.js` przechodzi kontrolę składni JavaScript.
+- wszystkie lokalne odwołania `src`/`href` oraz kotwice sekcji zostały sprawdzone pod kątem brakujących plików i celów.
+- zachowano tryb `prefers-reduced-motion` także dla nowych animacji/hoverów.
 
 ## Dane wymagające podmiany po wyborze domeny
 
 W całej paczce wyszukaj `https://twoja-domena.pl/` i zastąp docelowym adresem HTTPS. Dotyczy canonical, Open Graph, schema.org, robots.txt i sitemap.xml.
-
-## Materiały wizualne
-
-Nie znaleziono dostępnych plików firmowego logo ani realnych zdjęć produktów tej konkretnej firmy. Zamiast podszywać przypadkowe zdjęcia stockowe pod ofertę firmy, przygotowano autorską neutralną oprawę wektorową. Układ jest gotowy do podmiany na fotografie firmowe 1:1.

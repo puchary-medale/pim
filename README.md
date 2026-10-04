@@ -2,6 +2,16 @@
 
 Gotowa statyczna strona one page bez frameworków i zewnętrznych bibliotek.
 
+## Co zawiera ta wersja
+
+- firmowe logo „Puchary i Medale” w nagłówku i stopce,
+- fotografie trofeów, medali i statuetek dostarczone przez zamawiającego,
+- osobną sekcję „Oficjalny Platynowy Partner TRYUMF”,
+- sekcję „Katalog produktowy 2026” z podglądem PDF bez opuszczania strony,
+- możliwość otwarcia i pobrania katalogu 2026,
+- odświeżoną sekcję „Każdy sukces ma swoją scenę” z przyciemnionym zdjęciem w tle,
+- responsywną galerię ze zdjęciami i lightboxem.
+
 ## Publikacja
 
 Wgraj cały katalog na Vercel/Netlify lub dowolny hosting statyczny.
@@ -11,14 +21,14 @@ Przed publikacją na docelowej domenie wykonaj jedną zmianę globalną:
 `https://twoja-domena.pl/` → właściwy adres domeny
 
 Występuje on w:
-- `index.html` (canonical, Open Graph, schema.org)
-- `robots.txt`
-- `sitemap.xml`
+- `index.html` (canonical, Open Graph, schema.org),
+- `robots.txt`,
+- `sitemap.xml`.
 
-## Zdjęcia
+## Katalog 2026
 
-W katalogu `assets/` znajdują się autorskie lekkie grafiki wektorowe przygotowane jako neutralna oprawa wizualna. Nie znaleziono dostępnych materiałów firmowych tej konkretnej firmy. Gdy otrzymasz oryginalne zdjęcia produktów, możesz podmienić pliki galerii i kategorii 1:1 bez zmiany układu.
+Plik katalogu znajduje się lokalnie w `assets/katalog-tryumf-2026.pdf`. Podgląd wczytuje się dopiero po kliknięciu „Przeglądaj katalog”, dzięki czemu duży PDF nie spowalnia pierwszego uruchomienia strony.
 
 ## Kontakt
 
-Strona celowo nie wysyła danych do zewnętrznego formularza, ponieważ nie podano firmowego adresu e-mail ani usługi backendowej. CTA korzystają z `tel:` i `sms:`. Po podaniu docelowego e-maila można podpiąć formularz bez zmiany layoutu.
+Strona nie wysyła danych do zewnętrznego formularza. CTA korzystają z `tel:` i `sms:` oraz linku do Map Google.
