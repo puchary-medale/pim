@@ -764,3 +764,63 @@ button{font:inherit}
   .material-card strong{font-size:24px !important;}
   .occasion-card{border-radius:18px !important;}
 }
+
+/* --- Desktop polish 2026-10-04: studio headline, brief balance, process spacing --- */
+@media (min-width: 901px){
+  /* Give the copy enough room and keep the long Polish headline fully visible. */
+  .studio-grid{
+    grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);
+    gap:64px;
+    align-items:center;
+  }
+  .studio-copy,
+  .studio-showcase,
+  .brief-intro,
+  .brief-builder{min-width:0}
+  .studio-copy h2{
+    font-size:clamp(52px,3.75vw,66px);
+    line-height:.92;
+    letter-spacing:-.058em;
+    max-width:100%;
+  }
+  .studio-showcase{
+    grid-template-columns:1.08fr .92fr;
+  }
+
+  /* Use the whole form width instead of leaving an empty right-hand side. */
+  .brief-grid{
+    grid-template-columns:minmax(360px,.82fr) minmax(0,1.18fr);
+    gap:60px;
+  }
+  .brief-builder{padding:36px 38px}
+  .brief-builder .choice-row{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:10px;
+    width:100%;
+  }
+  .brief-builder .choice-row label{min-width:0}
+  .brief-builder .choice-row span{
+    width:100%;
+    min-height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:11px 10px;
+    white-space:normal;
+  }
+
+  /* The process bar should breathe below the gallery instead of touching it. */
+  .custom-section .process-strip{
+    margin-top:48px;
+    border-radius:26px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1180px){
+  .studio-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px}
+  .studio-copy h2{font-size:clamp(48px,4.7vw,58px)}
+  .brief-grid{grid-template-columns:minmax(310px,.78fr) minmax(0,1.22fr);gap:42px}
+  .brief-builder .choice-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+}

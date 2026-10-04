@@ -84,7 +84,7 @@
     const shortText = [product, style, ...extras].join(' · ');
     summary.textContent = shortText;
     const message = `Dzień dobry, interesują mnie: ${product}. Charakter: ${style}.${extras.length ? ` Personalizacja: ${extras.join(', ')}.` : ''} Proszę o kontakt i pomoc w doborze.`;
-    send.href = `mailto:biuro.stsmedia@gmail.com?subject=${encodeURIComponent("Zapytanie o nagrody")}&body=${encodeURIComponent(message)}`;
+    send.href = `sms:+48667281723?body=${encodeURIComponent(message)}`;
   };
 
   brief.addEventListener('change', updateBrief);
