@@ -71,3 +71,24 @@
 
   document.querySelector('#year').textContent = new Date().getFullYear();
 })();
+
+(() => {
+  const brief = document.querySelector('#awardBrief');
+  const summary = document.querySelector('#briefSummary');
+  const send = document.querySelector('#briefSend');
+  if (!brief || !summary || !send) return;
+
+  const updateBrief = () => {
+    const data = new FormData(brief);
+    const product = data.get('product') || 'Puchary';
+    const style = data.get('style') || 'Sportowy';
+    const extras = data.getAll('extras');
+    const shortText = [product, style, ...extras].join(' · ');
+    summary.textContent = shortText;
+    const message = `Dzień dobry, interesują mnie: ${product}. Charakter: ${style}.${extras.length ? ` Personalizacja: ${extras.join(', ')}.` : ''} Proszę o kontakt i pomoc w doborze.`;
+    send.href = `sms:+48667281723?body=${encodeURIComponent(message)}`;
+  };
+
+  brief.addEventListener('change', updateBrief);
+  updateBrief();
+})();
