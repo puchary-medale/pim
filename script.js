@@ -31,6 +31,15 @@
     document.body.classList.remove('menu-open');
   }));
 
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menuBtn?.getAttribute('aria-expanded') === 'true') {
+      menuBtn.setAttribute('aria-expanded', 'false');
+      mobileNav.classList.remove('open');
+      document.body.classList.remove('menu-open');
+      menuBtn.focus();
+    }
+  });
+
   const reveal = document.querySelectorAll('.reveal');
   if (reduced || !('IntersectionObserver' in window)) {
     reveal.forEach(el => el.classList.add('is-visible'));

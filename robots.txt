@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Podmień domenę po publikacji.
-Sitemap: https://twoja-domena.pl/sitemap.xml
+Sitemap: https://www.pucharymedale.com/sitemap.xml
